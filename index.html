@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>中間制作</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/flickity.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('a img').hover(function(){
+		$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+			}, function(){
+			   if (!$(this).hasClass('current')) {
+			   $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+		}
+	});
+	
+$('.main-carousel').flickity({
+  cellAlign: 'center',
+  autoPlay:3000 ,
+  wrapAround: true,
+});});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+<img id="left_do" src="img/dodo.gif" width="200" height="100" alt="効果音"/>
+<img id="joshu" src="img/josyu_t.png" width="580" height="330" alt="東方常秀"/>
+<img id="right_do" src="img/dodododo.gif" width="200" height="100" alt="効果音"/>
+</header>
+
+<div class="main-carousel">
+  <div class="carousel-cell"><img src="img/josyu1.jpg" width="570" height="550" alt="東方常秀"/></div>
+  <div class="carousel-cell"><img src="img/josyu2.jpg" width="850" height="550" alt="東方常秀"/></div>
+  <div class="carousel-cell"><img src="img/josyu3.jpg" width="850" height="550" alt="東方常秀"/></div>
+</div>
+
+<div id="info">
+  <dl>
+    <a href="#"><dt>2016.11.01</dt>
+    <dd>サイト発表会ィィィ</dd></a>
+    <a href="#"><dt>2016.10.31</dt>
+    <dd>常秀の仮装大会ィィ</dd></a>
+    <a href="#"><dt>2016.10.19</dt>
+    <dd>UJ11月号カット追加ァ!</dd></a>
+    <a href="#"><dt>2016.09.19</dt>
+    <dd>UJ10月号カット追加ァ!</dd></a>
+    <a href="#"><dt>2016.09.02</dt>
+    <dd>祝10回 !!!!!ジョジョリンピック開幕ッ</dd></a>
+    <a href="#"><dt>2016.08.19</dt>
+    <dd>UJ9月号カット追加ァ!</dd></a>
+    <a href="#"><dt>2016.08.3</dt>
+    <dd>名言集ランキング発表ッ!</dd></a>
+  </dl>
+  <a id="kako" href="#"><p>もっと前</p></a>
+</div>
+
+<div id="nav">
+<a href="#"><img class="navi" id src="img/josuke_n.png" width="423" height="215" alt=""/></a> 
+ <a href="index2.html"><img class="navi" id="kazoku" src="img/yasuho_n.png" width="423" height="236" alt=""/></a>
+ <a href="#"><img class="navi" id="katto" src="img/mitsuba_n.png" width="423" height="216" alt=""/></a> 
+ <a href="#"><img class="navi" id="minna" src="img/daiya.png" width="424" height="223" alt=""/></a> 
+<a href="#"><img class="navi" id="medelia" src="img/damo.png" width="433" height="270" alt=""/></a>
+</div>
+
+<div id="column">
+  <img src="img/miraguroman.png" width="410" height="350" alt=""/> </div>
+
+<footer>
+©LUCKY LAND COMMUNICATIONS/集英社・ジョジョの奇妙な冒険DU製作委員会
+この番組はフィクションであり、登場する人物、団体、場所、事件等は実在のものとは一切関係ありません。
+</footer>
+
+</div>
+</body>
+</html>
